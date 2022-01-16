@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background: var(--background);
+  color: var(--text_color);
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  display: grid;
+  grid-template-areas:
+  "nav"
+  "main";
+  width: 100%;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr;
+}
+
+.conteiner-in{
+  width: 96%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  grid-column-gap: 60px;
+}
+
+:root{
+  --background : #131619;
+  --gradient1 : linear-gradient(red, orange, yellow, green, blue);
+  --nav_back : #0C1013;
+  --text_color : #F0F0F0;
+  --nav_back_hover : #1f2931;
+  --title-font : 'Concert One', cursive;
+  --link_color : var(--text_color);
+  --text-size : 1.5em;
+  --title-size : 3em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+  background: var(--nav_back);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+a:-webkit-any-link{
+  color: var(--link_color);
+  transition: 0.3s;
+}
