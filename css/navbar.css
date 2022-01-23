@@ -57,5 +57,11 @@
 }
 
 .footer{
+  grid-area: footer;
   flex-direction: row-reverse;
+}
+
+.link:hover{
+  background: var(--nav_back_hover);
+  transition: 1s;
 }
